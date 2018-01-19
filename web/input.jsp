@@ -12,15 +12,20 @@
     <title>输入</title>
 </head>
 <body>
-    <form action="AdminServlet" >
-        <div id="mainFormDiv">
-            <!--操作码 请求版本号-->
-            <span id="loginText">登陆</span><br>
-            <input type="hidden" name="op" value="100">
+<form action="AdminServlet">
+    <div id="mainFormDiv">
+        <!--操作码 请求版本号-->
+        <span id="loginText">登陆</span><br>
+        <hr/>
+        <input type="hidden" name="op" value="100">
+        <div id="inputDiv">
             <input name="name" class="inputBox" placeholder="用户名"><br/>
             <input type="password" name="pw" class="inputBox" placeholder="密码"><br/>
-            <input type="submit" value="提交" class="submitButton">
+            <div id="buttonDiv">
+                <input type="submit" value="提交" class="submitButton">
+            </div>
         </div>
-    </form>
+    </div>
+</form>
 </body>
 </html>

@@ -10,25 +10,29 @@ html{
     border: none;
     border-radius: 3px;
     font-size: 100%;
-    padding: 5px;
+    padding: 5px 10px;;
     outline: none;
+    transition: width;
+    transition-duration: 1s;
 }
 
 .submitButton{
     font-size: large;
-    margin-top: 10px;
+    margin-top: 30px;
     color: aliceblue;
     outline: none;
-    height: 40px;
+    height: 45px;
     width: 200px;
     border: none;
     border-radius: 10px;
     text-align: center;
+    transition: width;
     background-color: cornflowerblue;
+    transition-duration: 1s;
 }
 
 .submitButton:hover{
-    background-color: dodgerblue;
+   width: 230px;
 }
 
 .submitButton:active{
@@ -36,19 +40,28 @@ html{
 }
 
 #mainFormDiv{
+    box-shadow: 3px 3px 5px rgba(41, 84, 115, 0.37);
+    position: absolute;
+    left: 50%;
+    top: 50%;
     border-radius: 3px;
-    text-align: center;
-    padding-bottom: 70px;
-    padding-top: 70px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     background-color: slategray;
-    margin: auto;
+    margin-left: -180px;
+    margin-top: -200px;
     width: 360px;
-    height: auto;
-    align-items: center;
-    vertical-align:middle;
+    height: 260px;
 }
 
+ #inputDiv{
+     margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
 #loginText{
+    margin-left: 30px;
     color: aliceblue;
-    font-size: large;
+    font-size: x-large;
 }
